@@ -1,11 +1,11 @@
-import './App.css';
+import './App.css'
+import Navigation from './Nav';
 
 function App() {
   return (
-    <p>Hello World</p>
+    <Navigation/>
   );
 }
-
 
 
 export default App;

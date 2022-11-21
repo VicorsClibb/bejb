@@ -1,0 +1,38 @@
+.App-Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.Logo img{
+    width: 100px;
+    height: 50px;
+}
+
+.User-Icon img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.List {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.Nav-Item {
+    padding-right: 20px;
+}
+
+.Nav-Item button {
+    width: 100px;
+    height: 25px;
+    background-color: rgb(26, 229, 26);
+    border: none;
+    color: black;
+    font-weight: bolder;
+    border-radius: 5px;
+}
