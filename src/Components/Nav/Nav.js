@@ -1,6 +1,8 @@
 import React from "react";
 import ErrorPage from "../ErrorPage/404";
 import "./Nav.css"
+import search from '../../assets/search-icon.png'
+import logo from '../../assets/logo.png'
 
 
 class Navigation extends React.Component {
@@ -8,33 +10,38 @@ class Navigation extends React.Component {
         super(props);
         this.state = {
             isLoggedIn: true
-        };   
+        };    
     }
 
     render () {
-        if (!this.state.isLoggedIn){ // Don't render shit unless user is logged in
+        if (this.state.isLoggedIn === false) {
             return (
-                <ErrorPage message="Login to access content"/>
-            );
-        }
-        else{
+                <ErrorPage  message='Login to access content' />
+            )
+        } else {
             return (
-                <header className="App-Header">
-                    <div className="Logo">
-                        <img src="https://www.kamerabild.se/sites/kamerabild.se/files/styles/article_image/public/field/image/46994.jpg?itok=genG2ZoV" alt="Clock man"/>
-                    </div>
-                    <div className="Nav">
-                        <ul className="List">
-                            <li className="Nav-Item"><button>Recomended</button></li>
-                            <li className="Nav-Item"><button>Following</button></li>
-                        </ul>
-                    </div>
-                    <div className="User-Icon">
-                        <img src="https://www.kamerabild.se/sites/kamerabild.se/files/styles/article_image/public/field/image/46994.jpg?itok=genG2ZoV" alt="Clock man"/>
+                <header>
+                    <div className="Navigation">
+                        <div className="Logo">
+                            <img src={logo} alt='Logo'/>
+                        </div>
+                        <div className="Search">
+                            <input type="text" placeholder="Search" />
+                            <button><img src={search} alt="Search-Button" /></button>
+                        </div>
+                        <div className="Viewing-Mode">
+                            <ul className="Categories">
+                                <li><a href=" ">Friends</a></li>
+                                <li><a href=" ">Recomended</a></li>
+                            </ul>
+                        </div>
+                        <div className="User-Profile">
+                            <img src="https://yt3.ggpht.com/3k9ahcDLssiWiUJXktP7gUGZxSL6JuxuI5SgcEDJUVvoSkvah8IagGg7W6FwbQsBVkeVs4norg=s900-c-k-c0x00ffffff-no-rj" alt="User photo" />
+                        </div>
                     </div>
                 </header>
-            );
-        };
+            )
+        }
     }
 
 }

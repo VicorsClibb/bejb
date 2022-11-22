@@ -1,38 +1,87 @@
-.App-Header {
+.Navigation {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgb(26, 26, 26);
 }
 
-
-.Logo img{
-    width: 100px;
-    height: 50px;
+.Logo {
+    width: 10%;
+    margin-top: 5px;
 }
 
-.User-Icon img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+.Logo img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.List {
+.Search {
+    width: 40%;
     display: flex;
-    flex-direction: row;
+    align-items: inline;
+}
+
+.Search img{
+    max-width: 75%;
+    max-height: 75%;
+}
+
+.Search button {
+    width: 15%;
+    height: 2.6em;
+    background: #67ac5e;
+    border: 2px rgba(255, 255, 255, 0.368) solid;
+    border-radius: 10px;
+    margin-left: 4px;
+
+}
+
+.Search input {
+    width: 85%;
+    height: 30px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.368);
+    border-radius: 10px;
+    background-color:rgb(26, 26, 26);
+    font-family: sans-serif; 
+    columns: rgba(255, 255, 255, 0.368);
+}
+
+.Search input::placeholder {
+    color: rgba(255, 255, 255, 0.368);
+}
+
+.Viewing-Mode {
+
+}
+
+.Categories {
+    display: flex;
+    align-items: inline;
     list-style: none;
 }
 
-.Nav-Item {
-    padding-right: 20px;
+.Categories li {
+    padding: 0px 10px;
 }
 
-.Nav-Item button {
-    width: 100px;
-    height: 25px;
-    background-color: rgb(26, 229, 26);
-    border: none;
-    color: black;
-    font-weight: bolder;
-    border-radius: 5px;
+.Categories a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #67ac5e;
+    text-decoration: none;
+}
+
+.User-Profile {
+    margin-top: 5px;
+    width: 5%;
+    height: 50px;
+}
+
+.User-Profile img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50px;
+    border: 2px rgba(255, 255, 255, 0.368) solid;
 }

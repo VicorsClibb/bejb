@@ -3,7 +3,7 @@ import Navigation from '../Nav/Nav';
 
 function App() {
   return (
-    <Navigation/>
+    <Navigation />
   );
 }
 
