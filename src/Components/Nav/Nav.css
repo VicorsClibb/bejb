@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(46, 46, 46);
 }
 
 .Logo {
@@ -31,7 +31,7 @@
     width: 15%;
     height: 2.6em;
     background: #67ac5e;
-    border: 2px rgba(255, 255, 255, 0.368) solid;
+    border: 2px rgba(0, 0, 0, 0.368) solid;
     border-radius: 10px;
     margin-left: 4px;
 
@@ -41,19 +41,14 @@
     width: 85%;
     height: 30px;
     border-style: solid;
-    border-color: rgba(255, 255, 255, 0.368);
+    border-color: rgba(0, 0, 0, 0.368);
     border-radius: 10px;
-    background-color:rgb(26, 26, 26);
+    background-color:rgb(46, 46, 46);
     font-family: sans-serif; 
-    columns: rgba(255, 255, 255, 0.368);
 }
 
 .Search input::placeholder {
-    color: rgba(255, 255, 255, 0.368);
-}
-
-.Viewing-Mode {
-
+    color: rgba(0, 0, 0, 0.368);
 }
 
 .Categories {
@@ -63,7 +58,7 @@
 }
 
 .Categories li {
-    padding: 0px 10px;
+    padding: 0px 20px;
 }
 
 .Categories a {
@@ -83,5 +78,5 @@
     max-width: 100%;
     max-height: 100%;
     border-radius: 50px;
-    border: 2px rgba(255, 255, 255, 0.368) solid;
+    border: 2px rgba(0, 0, 0, 0.368) solid;
 }
