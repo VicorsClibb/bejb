@@ -1,5 +1,5 @@
 import React from "react";
-import ErrorPage from "./404";
+import ErrorPage from "../ErrorPage/404";
 import "./Nav.css"
 
 
