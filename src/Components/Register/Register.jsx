@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-    function Register ()  {
+    function Register (props)  {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [name, setname] = useState('');
@@ -10,7 +10,7 @@ import React, {useState} from "react";
     }
       
 return (
-    <>
+    <div className="auth-form-container">
       <form onSubmit={handleSubmit}>
       <label>Full name</label>
       <input value={name} name="name" id="name" type="text" placeholder="Enter full name"/>
@@ -22,8 +22,8 @@ return (
         <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="Password" id="password" name="password" />
         <button>Login</button>
       </form>
-      <button>Already have an account? Login</button>
-    </>
+      <button onClick={() => props.onFormSwitch('login')}>Already have an account? Login</button>
+    </div>
 )
 }
 export default Register;
