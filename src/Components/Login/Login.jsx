@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-const Login = () => {
+const Login = (props) => {
   const [email, setEmail] = useState('');
   const [pass, setPass] = useState('');
 
@@ -9,7 +9,7 @@ const Login = () => {
   }
 
   return (
-    <>
+    <div className="auth-form-container">
       <form onSubmit={handleSubmit}>
         <label htmlFor="email">Email</label>
         <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email or Username" id="email" name="email" />
@@ -18,8 +18,8 @@ const Login = () => {
         <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="Password" id="password" name="password" />
         <button>Login</button>
       </form>
-      <button>Don't have an account? Register</button>
-    </>
+      <button onClick={() => props.onFormSwitch('register')}>Don't have an account? Register</button>
+    </div>
   )
 }
 
