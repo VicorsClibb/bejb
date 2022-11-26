@@ -1,0 +1,45 @@
+.auth-form-container {
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(79deg, rgb(67, 112, 67), rgb(15, 20, 15), rgb(10, 71, 22));
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+input[type=text], input[type=password], input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  #loginBtn, #registerBtn {
+    width: 100%;
+    background-color: #67ac5e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #loginBtn:hover, #registerBtn:hover {
+background-color: #86c77e;
+  }
+
+  .linkBtn {
+    background: none;
+    color: #ffff;
+    text-decoration: underline;
+    border: none;
+  }
