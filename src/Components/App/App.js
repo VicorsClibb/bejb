@@ -1,9 +1,12 @@
 import './App.css'
+<<<<<<< HEAD
 import Navigation from '../Nav/Nav';
+=======
+>>>>>>> refs/remotes/origin/mainpage
 
 function App() {
   return (
-    <Navigation/>
+    <div></div>
   );
 }
 
