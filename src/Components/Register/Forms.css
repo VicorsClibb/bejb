@@ -12,6 +12,16 @@
     
 }
 
+.login-form , .register-form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
 input[type=text], input[type=password], input[type=email], select {
     width: 100%;
     padding: 12px 20px;
