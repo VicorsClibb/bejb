@@ -18,7 +18,7 @@ return (
 
       <input value={name} onChange={(e) => setName(e.target.value)} name="name" id="name" type="text" placeholder="Enter full name"/>
 
-        <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email or Username" id="email" name="email" />
+        <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email" id="email" name="email" />
 
         <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="Password" id="password" name="password" />
         <button id="registerBtn">Create Account</button>
